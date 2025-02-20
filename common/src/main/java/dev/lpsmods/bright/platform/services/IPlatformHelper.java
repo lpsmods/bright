@@ -1,5 +1,11 @@
 package dev.lpsmods.bright.platform.services;
 
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import java.util.function.Function;
+
 public interface IPlatformHelper {
 
     /**
@@ -30,7 +36,6 @@ public interface IPlatformHelper {
      * @return The name of the environment type.
      */
     default String getEnvironmentName() {
-
         return isDevelopmentEnvironment() ? "development" : "production";
     }
 }
