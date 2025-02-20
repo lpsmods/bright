@@ -1,4 +1,4 @@
-# Lightning Bolt Glass
+# Bright
 
 Bright!! The only light mod that you'll ever need! Bright Includes 5 unique lighting blocks to light up your world!
 
