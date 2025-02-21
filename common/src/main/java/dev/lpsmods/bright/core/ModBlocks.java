@@ -189,9 +189,9 @@ public class ModBlocks {
         return RegistryEntry.blockWithItem(ModUtils.makeId(name), () -> new LightFixtureBlock(BlockBehaviour.Properties.of().mapColor(mapcolor).lightLevel(litBlockEmission(15)).instrument(NoteBlockInstrument.HAT).strength(0.3f).sound(SoundType.GLASS)));
     }
 
-    private static ToIntFunction<BlockState> litBlockEmission(int pLightValue) {
+    private static ToIntFunction<BlockState> litBlockEmission(int lightValue) {
         return (p_50763_) -> {
-            return (Boolean)p_50763_.getValue(BlockStateProperties.LIT) ? pLightValue : 0;
+            return (Boolean)p_50763_.getValue(BlockStateProperties.LIT) ? lightValue : 0;
         };
     }
 

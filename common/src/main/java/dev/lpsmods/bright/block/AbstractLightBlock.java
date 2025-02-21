@@ -20,26 +20,26 @@ public abstract class AbstractLightBlock extends Block {
     }
 
     @Nullable
-    public BlockState getStateForPlacement(BlockPlaceContext pContext) {
-        return (BlockState)this.defaultBlockState().setValue(LIT, pContext.getLevel().hasNeighborSignal(pContext.getClickedPos()));
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        return (BlockState)this.defaultBlockState().setValue(LIT, context.getLevel().hasNeighborSignal(context.getClickedPos()));
     }
 
-    protected void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
-        if (!pLevel.isClientSide) {
-            boolean flag = (Boolean)pState.getValue(LIT);
-            if (flag != pLevel.hasNeighborSignal(pPos)) {
+    protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
+        if (!level.isClientSide) {
+            boolean flag = (Boolean)state.getValue(LIT);
+            if (flag != level.hasNeighborSignal(pos)) {
                 if (flag) {
-                    pLevel.scheduleTick(pPos, this, 4);
+                    level.scheduleTick(pos, this, 4);
                 } else {
-                    pLevel.setBlock(pPos, (BlockState)pState.cycle(LIT), 2);
+                    level.setBlock(pos, (BlockState)state.cycle(LIT), 2);
                 }
             }
         }
     }
 
-    protected void tick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
-        if ((Boolean)pState.getValue(LIT) && !pLevel.hasNeighborSignal(pPos)) {
-            pLevel.setBlock(pPos, (BlockState)pState.cycle(LIT), 2);
+    protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        if ((Boolean)state.getValue(LIT) && !level.hasNeighborSignal(pos)) {
+            level.setBlock(pos, (BlockState)state.cycle(LIT), 2);
         }
     }
 

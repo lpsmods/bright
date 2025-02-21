@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
@@ -58,11 +57,11 @@ public class LightFixtureBlock extends AbstractLightBlock implements SimpleWater
     }
 
     @Nullable
-    public BlockState getStateForPlacement(BlockPlaceContext pContext) {
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
         BlockState blockstate = this.defaultBlockState();
-        LevelReader levelreader = pContext.getLevel();
-        BlockPos blockpos = pContext.getClickedPos();
-        Direction[] adirection = pContext.getNearestLookingDirections();
+        LevelReader levelreader = context.getLevel();
+        BlockPos blockpos = context.getClickedPos();
+        Direction[] adirection = context.getNearestLookingDirections();
         Direction[] var6 = adirection;
         int var7 = adirection.length;
         for(int var8 = 0; var8 < var7; ++var8) {
@@ -95,7 +94,7 @@ public class LightFixtureBlock extends AbstractLightBlock implements SimpleWater
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(new Property[]{LIT, FACING, WATERLOGGED});
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(new Property[]{LIT, FACING, WATERLOGGED});
     }
 }
