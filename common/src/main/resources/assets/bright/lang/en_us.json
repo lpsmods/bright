@@ -1,5 +1,11 @@
 {
   "itemGroup.bright": "Bright",
+  "tag.item.bright.igniters": "Igniters",
+  "tag.block.bright.candle_sticks": "Candle Sticks",
+  "tag.block.bright.ceiling_lights": "Ceiling Lights",
+  "tag.block.bright.floor_lights": "Floor Lights",
+  "tag.block.bright.light_bulbs": "Light Bulbs",
+  "tag.block.bright.light_fixtures": "Light Fixtures",
   "block.bright.copper_candle_stick": "Copper Candle Stick",
   "block.bright.copper_white_candle_stick": "Copper White Candle Stick",
   "block.bright.copper_orange_candle_stick": "Copper Orange Candle Stick",
