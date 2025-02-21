@@ -20,9 +20,6 @@
         ],
         "client": [
             "dev.lpsmods.bright.ClientBrightMod"
-        ],
-        "fabric-datagen": [
-            "dev.lpsmods.bright.BrightMod"
         ]
     },
     "depends": {
