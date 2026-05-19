@@ -1,0 +1,114 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lpsm_bright:lime_light_fixture",
+      "states": {
+        "lpsm_bright:lit": [false, true]
+      },
+      "menu_category": {
+        "category": "construction",
+        "group": "lpsm_bright:itemGroup.name.lightFixture"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/lpsm/bright/blocks/lime_light_fixture.json",
+      "tag:non_solid": {},
+      "minecraft:geometry": "geometry.light_fixture",
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["side"],
+            "block_filter": [
+              {
+                "tags": "!q.any_tag('non_solid')"
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:collision_box": {
+        "origin": [-2, 10, 5],
+        "size": [4, 5, 3]
+      },
+      "minecraft:selection_box": {
+        "origin": [-2, 10, 5],
+        "size": [4, 5, 3]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.3
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "minecraft:lime_concrete"
+        },
+        "base": {
+          "texture": "minecraft:lime_concrete"
+        },
+        "light": {
+          "texture": "lpsm_bright:lime_light"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction')=='west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, -90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction')=='east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction')=='south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction')=='north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lpsm_bright:lit')",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "minecraft:lime_concrete"
+            },
+            "base": {
+              "texture": "minecraft:lime_concrete"
+            },
+            "light": {
+              "texture": "lpsm_bright:lime_light_lit"
+            }
+          },
+          "minecraft:light_emission": 10
+        }
+      }
+    ]
+  }
+}

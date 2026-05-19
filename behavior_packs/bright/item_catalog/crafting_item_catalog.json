@@ -1,0 +1,115 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "lpsm_bright:copper_white_candle_stick",
+              "name": "lpsm_bright:itemGroup.name.candleStick"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "icon": "lpsm_bright:white_ceiling_light",
+              "name": "lpsm_bright:itemGroup.name.ceilingLight"
+            },
+            "items": [
+              "lpsm_bright:white_ceiling_light",
+              "lpsm_bright:light_gray_ceiling_light",
+              "lpsm_bright:gray_ceiling_light",
+              "lpsm_bright:black_ceiling_light",
+              "lpsm_bright:brown_ceiling_light",
+              "lpsm_bright:red_ceiling_light",
+              "lpsm_bright:orange_ceiling_light",
+              "lpsm_bright:yellow_ceiling_light",
+              "lpsm_bright:lime_ceiling_light",
+              "lpsm_bright:green_ceiling_light",
+              "lpsm_bright:cyan_ceiling_light",
+              "lpsm_bright:light_blue_ceiling_light",
+              "lpsm_bright:blue_ceiling_light",
+              "lpsm_bright:purple_ceiling_light",
+              "lpsm_bright:magenta_ceiling_light",
+              "lpsm_bright:pink_ceiling_light"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "lpsm_bright:white_floor_light",
+              "name": "lpsm_bright:itemGroup.name.floorLight"
+            },
+            "items": [
+              "lpsm_bright:white_floor_light",
+              "lpsm_bright:light_gray_floor_light",
+              "lpsm_bright:gray_floor_light",
+              "lpsm_bright:black_floor_light",
+              "lpsm_bright:brown_floor_light",
+              "lpsm_bright:red_floor_light",
+              "lpsm_bright:orange_floor_light",
+              "lpsm_bright:yellow_floor_light",
+              "lpsm_bright:lime_floor_light",
+              "lpsm_bright:green_floor_light",
+              "lpsm_bright:cyan_floor_light",
+              "lpsm_bright:light_blue_floor_light",
+              "lpsm_bright:blue_floor_light",
+              "lpsm_bright:purple_floor_light",
+              "lpsm_bright:magenta_floor_light",
+              "lpsm_bright:pink_floor_light"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "lpsm_bright:white_light_bulb",
+              "name": "lpsm_bright:itemGroup.name.lightBulb"
+            },
+            "items": [
+              "lpsm_bright:white_light_bulb",
+              "lpsm_bright:light_gray_light_bulb",
+              "lpsm_bright:gray_light_bulb",
+              "lpsm_bright:black_light_bulb",
+              "lpsm_bright:brown_light_bulb",
+              "lpsm_bright:red_light_bulb",
+              "lpsm_bright:orange_light_bulb",
+              "lpsm_bright:yellow_light_bulb",
+              "lpsm_bright:lime_light_bulb",
+              "lpsm_bright:green_light_bulb",
+              "lpsm_bright:cyan_light_bulb",
+              "lpsm_bright:light_blue_light_bulb",
+              "lpsm_bright:blue_light_bulb",
+              "lpsm_bright:purple_light_bulb",
+              "lpsm_bright:magenta_light_bulb",
+              "lpsm_bright:pink_light_bulb"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "lpsm_bright:white_light_fixture",
+              "name": "lpsm_bright:itemGroup.name.lightFixture"
+            },
+            "items": [
+              "lpsm_bright:white_light_fixture",
+              "lpsm_bright:light_gray_light_fixture",
+              "lpsm_bright:gray_light_fixture",
+              "lpsm_bright:black_light_fixture",
+              "lpsm_bright:brown_light_fixture",
+              "lpsm_bright:red_light_fixture",
+              "lpsm_bright:orange_light_fixture",
+              "lpsm_bright:yellow_light_fixture",
+              "lpsm_bright:lime_light_fixture",
+              "lpsm_bright:green_light_fixture",
+              "lpsm_bright:cyan_light_fixture",
+              "lpsm_bright:light_blue_light_fixture",
+              "lpsm_bright:blue_light_fixture",
+              "lpsm_bright:purple_light_fixture",
+              "lpsm_bright:magenta_light_fixture",
+              "lpsm_bright:pink_light_fixture"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

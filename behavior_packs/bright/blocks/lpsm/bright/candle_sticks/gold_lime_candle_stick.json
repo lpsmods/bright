@@ -1,0 +1,123 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lpsm_bright:gold_lime_candle_stick",
+      "states": {
+        "lpsm_bright:lit": [false, true]
+      },
+      "menu_category": {
+        "category": "construction",
+        "group": "lpsm_bright:itemGroup.name.candleStick"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/lpsm/bright/blocks/gold_lime_candle_stick.json",
+      "tag:non_solid": {},
+      "minecraft:geometry": "geometry.candle_stick",
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up"],
+            "block_filter": [
+              {
+                "tags": "!q.any_tag('non_solid')"
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:collision_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 7, 6]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 7, 6]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.5
+      },
+      "minecraft:tick": {
+        "interval_range": [0, 0]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "minecraft:lime_candle",
+          "render_method": "alpha_test"
+        },
+        "base": {
+          "texture": "lpsm_bright:gold_candle_stick",
+          "render_method": "alpha_test"
+        },
+        "candle": {
+          "texture": "minecraft:lime_candle",
+          "render_method": "alpha_test"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('lpsm_bright:lit')",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "minecraft:lime_candle_lit",
+              "render_method": "alpha_test"
+            },
+            "base": {
+              "texture": "lpsm_bright:gold_candle_stick",
+              "render_method": "alpha_test"
+            },
+            "candle": {
+              "texture": "minecraft:lime_candle_lit",
+              "render_method": "alpha_test"
+            }
+          },
+          "minecraft:light_emission": 5
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction')=='west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction')=='east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, -90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction')=='south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction')=='north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      }
+    ]
+  }
+}

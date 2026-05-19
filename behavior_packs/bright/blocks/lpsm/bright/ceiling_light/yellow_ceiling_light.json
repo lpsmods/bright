@@ -1,0 +1,77 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lpsm_bright:yellow_ceiling_light",
+      "states": {
+        "lpsm_bright:lit": [false, true]
+      },
+      "menu_category": {
+        "category": "construction",
+        "group": "lpsm_bright:itemGroup.name.ceilingLight"
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/lpsm/bright/blocks/yellow_ceiling_light.json",
+      "tag:non_solid": {},
+      "minecraft:geometry": "geometry.ceiling_light",
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["down"],
+            "block_filter": [
+              {
+                "tags": "!q.any_tag('non_solid')"
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:collision_box": {
+        "origin": [-2, 13, -2],
+        "size": [4, 3, 4]
+      },
+      "minecraft:selection_box": {
+        "origin": [-2, 13, -2],
+        "size": [4, 3, 4]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.3
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "minecraft:yellow_concrete"
+        },
+        "base": {
+          "texture": "minecraft:yellow_concrete"
+        },
+        "light": {
+          "texture": "lpsm_bright:yellow_light"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('lpsm_bright:lit')",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "minecraft:yellow_concrete"
+            },
+            "base": {
+              "texture": "minecraft:yellow_concrete"
+            },
+            "light": {
+              "texture": "lpsm_bright:yellow_light_lit"
+            }
+          },
+          "minecraft:light_emission": 10
+        }
+      }
+    ]
+  }
+}

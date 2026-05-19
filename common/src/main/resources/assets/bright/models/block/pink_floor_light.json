@@ -1,7 +1,0 @@
-{
-	"parent": "bright:block/template_floor_light",
-	"textures": {
-		"base": "minecraft:block/pink_concrete",
-		"light": "bright:block/light/pink_light"
-	}
-}

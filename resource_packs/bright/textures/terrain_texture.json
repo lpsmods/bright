@@ -1,0 +1,149 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "lpsm_bright:iron_candle_stick": {
+      "textures": "textures/lpsm/bright/blocks/candle_stick/iron_candle_stick.png"
+    },
+    "lpsm_bright:copper_candle_stick": {
+      "textures": "textures/lpsm/bright/blocks/candle_stick/copper_candle_stick.png"
+    },
+    "lpsm_bright:gold_candle_stick": {
+      "textures": "textures/lpsm/bright/blocks/candle_stick/gold_candle_stick.png"
+    },
+    "lpsm_bright:diamond_candle_stick": {
+      "textures": "textures/lpsm/bright/blocks/candle_stick/diamond_candle_stick.png"
+    },
+    "lpsm_bright:netherite_candle_stick": {
+      "textures": "textures/lpsm/bright/blocks/candle_stick/netherite_candle_stick.png"
+    },
+    "lpsm_bright:white_light": {
+      "textures": "textures/lpsm/bright/blocks/light/white_light.png"
+    },
+    "lpsm_bright:orange_light": {
+      "textures": "textures/lpsm/bright/blocks/light/orange_light.png"
+    },
+    "lpsm_bright:magenta_light": {
+      "textures": "textures/lpsm/bright/blocks/light/magenta_light.png"
+    },
+    "lpsm_bright:light_blue_light": {
+      "textures": "textures/lpsm/bright/blocks/light/light_blue_light.png"
+    },
+    "lpsm_bright:yellow_light": {
+      "textures": "textures/lpsm/bright/blocks/light/yellow_light.png"
+    },
+    "lpsm_bright:lime_light": {
+      "textures": "textures/lpsm/bright/blocks/light/lime_light.png"
+    },
+    "lpsm_bright:pink_light": {
+      "textures": "textures/lpsm/bright/blocks/light/pink_light.png"
+    },
+    "lpsm_bright:light_gray_light": {
+      "textures": "textures/lpsm/bright/blocks/light/light_gray_light.png"
+    },
+    "lpsm_bright:gray_light": {
+      "textures": "textures/lpsm/bright/blocks/light/gray_light.png"
+    },
+    "lpsm_bright:cyan_light": {
+      "textures": "textures/lpsm/bright/blocks/light/cyan_light.png"
+    },
+    "lpsm_bright:purple_light": {
+      "textures": "textures/lpsm/bright/blocks/light/purple_light.png"
+    },
+    "lpsm_bright:blue_light": {
+      "textures": "textures/lpsm/bright/blocks/light/blue_light.png"
+    },
+    "lpsm_bright:brown_light": {
+      "textures": "textures/lpsm/bright/blocks/light/brown_light.png"
+    },
+    "lpsm_bright:green_light": {
+      "textures": "textures/lpsm/bright/blocks/light/green_light.png"
+    },
+    "lpsm_bright:red_light": {
+      "textures": "textures/lpsm/bright/blocks/light/red_light.png"
+    },
+    "lpsm_bright:black_light": {
+      "textures": "textures/lpsm/bright/blocks/light/black_light.png"
+    },
+    "lpsm_bright:white_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/white_light_lit.png"
+    },
+    "lpsm_bright:orange_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/orange_light_lit.png"
+    },
+    "lpsm_bright:magenta_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/magenta_light_lit.png"
+    },
+    "lpsm_bright:light_blue_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/light_blue_light_lit.png"
+    },
+    "lpsm_bright:yellow_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/yellow_light_lit.png"
+    },
+    "lpsm_bright:lime_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/lime_light_lit.png"
+    },
+    "lpsm_bright:pink_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/pink_light_lit.png"
+    },
+    "lpsm_bright:light_gray_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/light_gray_light_lit.png"
+    },
+    "lpsm_bright:gray_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/gray_light_lit.png"
+    },
+    "lpsm_bright:cyan_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/cyan_light_lit.png"
+    },
+    "lpsm_bright:purple_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/purple_light_lit.png"
+    },
+    "lpsm_bright:blue_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/blue_light_lit.png"
+    },
+    "lpsm_bright:brown_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/brown_light_lit.png"
+    },
+    "lpsm_bright:green_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/green_light_lit.png"
+    },
+    "lpsm_bright:red_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/red_light_lit.png"
+    },
+    "lpsm_bright:black_light_lit": {
+      "textures": "textures/lpsm/bright/blocks/light/black_light_lit.png"
+    },
+    "lpsm_bright:celing_light": {
+      "textures": "textures/lpsm/bright/blocks/celing_light.png"
+    },
+    "lpsm_bright:floor_light": {
+      "textures": "textures/lpsm/bright/blocks/floor_light.png"
+    },
+    "lpsm_bright:light_fixture": {
+      "textures": "textures/lpsm/bright/blocks/light_fixture.png"
+    },
+    "lpsm_bright:light_panel": {
+      "textures": "textures/lpsm/bright/blocks/light_panel.png"
+    },
+    "lpsm_bright:slab_light_side": {
+      "textures": "textures/lpsm/bright/blocks/slab_light_side.png"
+    },
+    "lpsm_bright:slab_light_top": {
+      "textures": "textures/lpsm/bright/blocks/slab_light_top.png"
+    },
+    "lpsm_bright:tall_candle": {
+      "textures": "textures/lpsm/bright/blocks/tall_candle.png"
+    },
+    "lpsm_bright:tiki_torch_bottom": {
+      "textures": "textures/lpsm/bright/blocks/tiki_torch_bottom.png"
+    },
+    "lpsm_bright:tiki_torch_top": {
+      "textures": "textures/lpsm/bright/blocks/tiki_torch_top.png"
+    },
+    "lpsm_bright:walL_decor": {
+      "textures": "textures/lpsm/bright/blocks/wall_decor.png"
+    }
+  }
+}

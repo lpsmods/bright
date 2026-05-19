@@ -1,0 +1,45 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "pack.description",
+    "name": "pack.name",
+    "uuid": "2fe12920-6843-4f14-aa89-c4c1e14f4b9f",
+    "version": [2, 0, 0],
+    "min_engine_version": [1, 21, 90]
+  },
+  "metadata": {
+    "authors": ["Legopitstop"],
+    "license": "https://license.lpsmods.dev",
+    "url": "https://lpsmods.dev"
+  },
+  "modules": [
+    {
+      "description": "pack.description",
+      "type": "data",
+      "uuid": "72471279-7441-445c-95a8-edbe7142e1d8",
+      "version": [2, 0, 0]
+    },
+    {
+      "type": "script",
+      "uuid": "14ff023b-d987-4f3d-b722-fb9576b4995c",
+      "version": [2, 0, 0],
+      "language": "javascript",
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a9667f51-351b-47b6-bf2b-cedaa45cd884",
+      "version": [2, 0, 0]
+    },
+    {
+      "description": "Assets Plus RP v2.0.0",
+      "uuid": "c86dd7d9-e84e-456f-a84f-1993e353da4c",
+      "version": [2, 0, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    }
+  ]
+}
