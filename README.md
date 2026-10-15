@@ -10,7 +10,7 @@ Bright!! The only light mod that you'll ever need! Bright Includes 5 unique ligh
 
 This repository has multiple branches for each platform this Minecraft mod supports.
 
-- [`1.21`](https://github.com/lpsmods/bright/tree/1.21)
+- [`java`](https://github.com/lpsmods/bright/tree/1.21)
 - [`bedrock`](https://github.com/lpsmods/bright/tree/bedrock)
 
 ## Mod Data
